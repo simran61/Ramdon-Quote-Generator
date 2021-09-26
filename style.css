@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+:root{
+    --dark-color: rgb(72, 161, 235);
+    --primary-color: rgb(24, 101, 173);
+    --light-color: rgb(153, 231, 245);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: var(--dark-color);
+    padding: 2rem;
+}
+
+.quote-wrapper{
+    background-color: white;
+    border-radius: 20px;
+    padding: 2rem 1.2rem;
+    box-shadow: 0 2px 15px -5px rgba(0, 0, 0, 1);
+}
+
+.quote-wrapper h2{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.quote-wrapper small{
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+    color: var(--dark-color);
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.quote-wrapper blockquote{
+    padding: 1.4rem;
+    font-weight: 300;
+}
+
+.quote-wrapper cite{
+    display: block;
+    font-size: normal;
+    margin-bottom: 1rem;
+}
+
+#gen-quote-btn{
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--dark-color);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    outline: 0;
+}
+
+#gen-quote-btn:hover{
+    color: black;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    box-shadow: 0px 0px 9px 0px rgba(159, 107, 160, 0.67);
+}
+
+@media screen and (min-width: 680px) {
+    .quote-wrapper{
+        width: 600px;
+    }
+}
